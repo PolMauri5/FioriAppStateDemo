@@ -4,9 +4,19 @@
   xmlns="sap.m">
   <App>
     <pages>
-      <Page title="Hello World">
+      <Page title="Gestion de tareas">
         <content>
-          <Button text="Press me" press="onPress"/>
+			<VBox>
+				<List 
+					id="taskList"
+					items="{/tasks}">
+
+					<StandardListItem 
+						title="{taskName}"
+						description="{taskDescription}"/>
+				</List>
+			</VBox>
+          <Button text="Add task" press="onPressAddTask"/>
         </content>
       </Page>
     </pages>
