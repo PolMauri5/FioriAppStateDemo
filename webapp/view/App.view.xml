@@ -1,10 +1,14 @@
 <mvc:View
-	controllerName="mycompany.myapp.controller.App"
-	displayBlock="true"
-	xmlns:mvc="sap.ui.core.mvc"
-	xmlns="sap.m">
-	<App
-		id="app"
-		busy="{appView>/busy}"
-		busyIndicatorDelay="{appView>/delay}"/>
+  controllerName="myApp.controller.App"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m">
+  <App>
+    <pages>
+      <Page title="Hello World">
+        <content>
+          <Button text="Press me" press="onPress"/>
+        </content>
+      </Page>
+    </pages>
+  </App>
 </mvc:View>

@@ -23,7 +23,8 @@
         },
         "sourceTemplate": {
             "id": "sap.ui.ui5-template-plugin.1worklist",
-            "version": "1.30.4"
+            "version": "1.30.4",
+            "toolsId": "bbe3ed71-16d8-4349-b49d-254b5b667ae8"
         }
     },
     "sap.ui": {
@@ -89,7 +90,8 @@
                     "target": "notFound"
                 }
             },
-            "routes": [{
+            "routes": [
+                {
                     "pattern": ":?query:",
                     "name": "worklist",
                     "target": "worklist"
